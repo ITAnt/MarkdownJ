@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <root-path           name="all"            path=""/>
+        <cache-path          name="cache"          path="/"/>
+        <external-cache-path name="external_cache" path="." />
+        <external-path       name="external"       path="." />
+        <external-files-path name="external_files" path="." />
+        <files-path          name="app_videos"     path="." />
+    </paths>
+</resources>
+<!--root-path代表/也就是Android设备的根目录，该目录下包含着手机内部存储器，外置SD卡等所有文件的目录-->

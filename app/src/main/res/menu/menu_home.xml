@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeActivity"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_folder"
+        android:icon="@drawable/ic_folder"
+        android:title="@string/menu_new_dir"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_new_note"
+        android:title="@string/menu_new_file"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/g_search"
+        android:title="@string/search"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title"/>
+
+    <item
+        android:title="@string/more"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title">
+        <menu>
+            <!--todo：可以同步文章到云端，换背景，换主题-->
+            <item
+                android:id="@+id/action_account"
+                android:icon="@drawable/ic_person"
+                android:title="@string/sync_cloud"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always"
+                android:visible="false"/>
+
+            <item
+                android:id="@+id/action_export"
+                android:icon="@drawable/ic_save_down"
+                android:title="@string/menu_export"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/action_import"
+                android:icon="@drawable/ic_import"
+                android:title="@string/menu_import"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/action_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/app_setting"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>
+

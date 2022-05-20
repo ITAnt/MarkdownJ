@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeActivity"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_undo"
+        android:icon="@drawable/ic_action_rollback"
+        android:title="@string/undo"
+        app:iconTint="@color/gray_text3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_redo"
+        android:icon="@drawable/ic_action_forward"
+        android:title="@string/redo"
+        app:iconTint="@color/gray_text3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preview"
+        android:icon="@drawable/ic_action_preview"
+        android:title="@string/help_preview"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title"/>
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_action_edit"
+        android:title="@string/edit"
+        app:iconTint="@color/theme_color_title"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_more"
+        android:title="@string/more"
+        android:icon="@drawable/ic_more"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title">
+
+        <menu>
+            <item
+                android:id="@+id/menu_save"
+                android:icon="@drawable/ic_save"
+                android:title="@string/save_now"
+                app:showAsAction="always"
+                app:iconTint="@color/theme_color_title"/>
+
+            <item
+                android:id="@+id/menu_edit_title"
+                android:icon="@drawable/ic_action_edit"
+                android:title="@string/edit_title"
+                app:showAsAction="always"
+                app:iconTint="@color/theme_color_title"/>
+
+            <item
+                android:id="@+id/action_help"
+                android:icon="@drawable/g_tips"
+                android:title="@string/help"
+                app:showAsAction="always"
+                app:iconTint="@color/theme_color_title"
+                android:visible="false"/>
+
+            <item
+                android:id="@+id/action_live_preview"
+                android:icon="@drawable/ic_action_preview"
+                app:showAsAction="always"
+                app:iconTint="@color/theme_color_title"
+                android:title="@string/real_time_preview"
+                android:visible="false"/>
+
+            <item
+                android:id="@+id/menu_del"
+                android:icon="@drawable/ic_delete"
+                android:title="@string/del_doc"
+                app:showAsAction="always"
+                app:iconTint="@color/theme_color_title"/>
+
+            <item
+                android:id="@+id/share_md"
+                android:icon="@drawable/ic_file"
+                android:title="@string/share_md"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/share_pdf"
+                android:icon="@drawable/ic_pdf"
+                android:title="@string/share_pdf"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/share_html"
+                android:icon="@drawable/ic_lan"
+                android:title="@string/share_html"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+
+            <item
+                android:id="@+id/share_image"
+                android:icon="@drawable/ic_edit_photo"
+                android:title="@string/share_image"
+                app:iconTint="@color/theme_color_title"
+                app:showAsAction="always" />
+        </menu>
+    </item>
+</menu>
+

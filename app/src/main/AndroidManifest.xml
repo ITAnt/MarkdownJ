@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itant.md">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:name="com.itant.md.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.itant.md.ui.home.HomeActivity"
+            android:exported="true"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name="com.itant.md.ui.home.vip.VipHomeActivity"
+            android:exported="true"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeVip">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+
+        <activity
+            android:name=".ui.add.AddActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden|uiMode"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.share.impl.html.ShareHtmlActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:theme="@style/ShareTheme"/>
+
+        <activity
+            android:name=".ui.share.impl.image.ShareImageActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:theme="@style/ShareTheme"/>
+
+        <activity
+            android:name=".ui.share.impl.pdf.SharePdfActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:theme="@style/ShareTheme"/>
+
+        <activity
+            android:name=".ui.setting.help.HelpActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.share.impl.md.ShareMdActivity"
+            android:exported="false"
+            android:configChanges="locale|orientation|screenSize|keyboardHidden"
+            android:theme="@style/ShareTheme"/>
+
+        <service android:name="com.itant.md.AliveService" />
+    </application>
+
+</manifest>

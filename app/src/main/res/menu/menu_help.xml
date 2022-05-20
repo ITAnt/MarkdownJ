@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeActivity"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/action_plain"
+        android:icon="@drawable/ic_book"
+        android:title="@string/help_raw"
+        app:iconTint="@color/theme_color_title"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preview"
+        android:icon="@drawable/ic_action_preview"
+        android:title="@string/help_preview"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title"/>
+
+    <item
+        android:id="@+id/action_split"
+        android:icon="@drawable/ic_edit_split"
+        android:title="@string/help_split"
+        app:showAsAction="always"
+        app:iconTint="@color/theme_color_title"/>
+</menu>
+

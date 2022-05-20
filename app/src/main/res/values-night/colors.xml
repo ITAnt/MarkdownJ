@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">@color/black_light</color>
+    <color name="colorAccent">#ee534f</color>
+    <color name="theme_color_title">#FFFFFF</color>
+    <color name="theme_color_ripple">#ababab</color>
+
+</resources>
